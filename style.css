@@ -1,0 +1,55 @@
+.container{
+    width: 571px;
+    background: white;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-radius: 14px;
+    padding: 15px 0px;
+}
+body{
+
+    display: flex;
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-image:  url('./assets/fundo.png');
+    background-size: cover;
+}
+.logo{
+    border-radius: 100px
+}
+.containerInput{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width:488px;
+    height: 70px;
+    justify-content: center;
+}
+input{
+    padding: 12px 16px;
+    margin-top: 8px; 
+    border-radius: 5px;   
+    border-color: #D9D9D9;
+    border-style: solid;
+}
+.containerInput button{
+    width: 488px;
+    height: 46px;
+    background-color: #002c50;
+    color: white;  
+    border-radius: 8px;
+    border: solid #002c50 ;
+    cursor: pointer;
+}
+h1{
+    font-weight: 600;
+}
+.containerInput button:hover{
+    background-color: #005499;
+    border: solid #005499 ;
+}
