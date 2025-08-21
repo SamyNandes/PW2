@@ -28,9 +28,14 @@ if (mysqli_num_rows($consulta)==1){
 	session_start();
 	$_SESSION['login']=true;
 	$_SESSION['usuario']=$usuario; /* ?????? */
+	setcookie("usuario", $usuario, time() + 3600, "/");
 	header('location:logicaVerificacao.php');
+	
+	
 }
 else{
 	/*echo 'usuário e/ou senha inválido(s)';*/
 	header('location:home.php?erro');	
 }
+
+

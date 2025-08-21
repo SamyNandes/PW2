@@ -1,11 +1,6 @@
 <?php
 
-$servidor = "localhost";
-$usuario = "root";
-$senha = "";
-$db = "cadastro_cur_alu";
-
-$conexao = mysqli_connect($servidor, $usuario, $senha, $db);
+include 'db.php';
 
 $nome = $_POST['nome_alu'];
 $idade = $_POST['email_alu'];

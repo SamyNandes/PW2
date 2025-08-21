@@ -40,6 +40,8 @@
       <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
     </div>
     <button type="submit" class="btn btn-primary w-100">Entrar</button>
+    <p style="margin: 15px 0px">Não tem conta ainda?</p>
+    <a href="../cadastroProf.php" class="btn btn-outline-primary w-100">Cadastrar-se</a>
   </form>
 
   <?php if (isset($_GET['erro'])) { ?>

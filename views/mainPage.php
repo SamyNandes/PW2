@@ -10,9 +10,11 @@ exit;
 
 // Define o cookie (apenas para teste)
 if (!isset($_COOKIE['usuario'])) {
-    setcookie("usuario", "Joao", time() + 3600, "/"); // Expira em 1 hora
+    header("Location: home.php");
 }
-?>
+
+
+?> 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
