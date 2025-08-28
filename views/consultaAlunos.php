@@ -69,6 +69,7 @@ $consulta = mysqli_query($conexao, $query);
         echo "ocorreu um erro terrivel";
     }; ?>
   </tbody>
-</table></div>
+</table>
+<a href="./home.php" class="text-light text-decoration-none"><button class="btn btn-primary">Voltar para a página de home</button></a></div>
 </body>
 </html>
