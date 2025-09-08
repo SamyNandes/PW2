@@ -5,7 +5,7 @@
   <img src="./assets/logo.png" class="logo" width="80" alt="Logo">
   <h1 class="my-4">Faça o cadastro do aluno!</h1>
 
-  <form id="formCadastro" method="post" action="./views/consultaAlunos.php" onsubmit="abrirModal(event)" style=" width: 80%">
+  <form id="formCadastro" method="post" action="./cadastroAluno_Logica.php" onsubmit="abrirModal(event)" style=" width: 80%">
     <div class="mb-3">
       <label for="nome" class="form-label">Nome do aluno:</label>
       <input type="text" class="form-control" id="nome" name="nome_alu" placeholder="Digite o nome do aluno" required>

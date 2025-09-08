@@ -51,8 +51,9 @@ $consulta = mysqli_query($conexao, $query);
     <tr>
       <th scope="col">Id</th>
       <th scope="col">Nome</th>
-      <th scope="col">Idade</th>
+      <th scope="col">Email</th>
       <th scope="col">Curso</th>
+      <th scope="col">Excluir aluno</th>  
     </tr>
   </thead>
   <tbody>
@@ -61,8 +62,9 @@ $consulta = mysqli_query($conexao, $query);
                     echo "<tr>";
                     echo "<td>" . htmlspecialchars($linha['id_alu']) . "</td>";
                     echo "<td>" . htmlspecialchars($linha['nome_alu']) . "</td>";
-                    echo "<td>" . htmlspecialchars($linha['idade_alu']) . "</td>";
+                    echo "<td>" . htmlspecialchars($linha['email_alu']) . "</td>";
                     echo "<td>" . htmlspecialchars($linha['curso_alu']) . "</td>";
+                    echo "<td> <a class=\"text-white text-decoration-none\" href=\"../deletar_aluno.php?id=" . htmlspecialchars($linha['id_alu']) . "\"><button class=\"btn btn-primary\"> Exluir aluno </button></a> </td>";
                     echo "</tr>";
         }
     } else {
@@ -70,6 +72,6 @@ $consulta = mysqli_query($conexao, $query);
     }; ?>
   </tbody>
 </table>
-<a href="./home.php" class="text-light text-decoration-none"><button class="btn btn-primary">Voltar para a página de home</button></a></div>
+<a href="./mainPage.php" class="text-light text-decoration-none"><button class="btn btn-primary">Voltar para a página de home</button></a></div>
 </body>
 </html>

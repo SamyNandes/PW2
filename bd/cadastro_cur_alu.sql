@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `aluno` (
   `nome_alu` text NOT NULL,
-  `idade_alu` int(2) NOT NULL,
+  `email_alu` text NOT NULL,
   `curso_alu` text NOT NULL,
   `id_alu` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -38,18 +38,11 @@ CREATE TABLE `aluno` (
 -- Dumping data for table `aluno`
 --
 
-INSERT INTO `aluno` (`nome_alu`, `idade_alu`, `curso_alu`, `id_alu`) VALUES
-('Luara de Oliveira Romeiro', 16, 'DS', 1),
-('Luara de Oliveira Romeiro', 16, 'DS', 2),
-('Luara de Oliveira Romeiro', 16, 'DS', 3),
-('jao', 0, 'ds', 4),
-('jao', 0, 'ds', 5),
-('jao', 0, 'ds', 6),
-('jao', 0, 'ds', 7),
-('jao', 0, 'ds', 8),
-('jao', 0, 'ds', 9),
-('jao', 0, 'ds', 10),
-('assa', 0, 'assa', 11);
+INSERT INTO `aluno` (`nome_alu`, `email_alu`, `curso_alu`, `id_alu`) VALUES
+('Luara de Oliveira Romeiro', "caralhgo", 'DS', 1),
+('Luara de Oliveira Romeiro', "caralhgo", 'DS', 2),
+('Luara de Oliveira Romeiro', "caralhgo", 'DS', 3);
+
 
 -- --------------------------------------------------------
 
